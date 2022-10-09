@@ -115,22 +115,22 @@
                 <img src="images/image5.png">
                 <div class="overlay"></div>
                 <div class="service-desc">
-                     <h3> Hair cut</h3>
-                     <hr>
-                     <p>
-                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit excepturi veniam maxime 
-                     </p>
+                    <h3> Hair cut</h3>
+                    <hr>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit excepturi veniam maxime
+                    </p>
                 </div>
             </div>
             <div class="single-service">
                 <img src="images/image15.png">
                 <div class="overlay"></div>
                 <div class="service-desc">
-                     <h3> Dry Shampoo</h3>
-                     <hr>
-                     <p>
-                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit excepturi veniam maxime 
-                     </p>
+                    <h3> Dry Shampoo</h3>
+                    <hr>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit excepturi veniam maxime
+                    </p>
                 </div>
             </div>
         </div>
@@ -149,7 +149,9 @@
                         <small>@chrisevans</small>
                     </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum culpa reiciendis quidem numquam cumque unde accusantium atque asperiores architecto exercitationem. Distinctio velit dolores tempora repellendus ex neque officia? Consequuntur, quo?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum culpa reiciendis quidem numquam cumque
+                    unde accusantium atque asperiores architecto exercitationem. Distinctio velit dolores tempora
+                    repellendus ex neque officia? Consequuntur, quo?</p>
             </div>
 
             <div class="testimonial-col">
@@ -160,7 +162,9 @@
                         <small>@jacenorman</small>
                     </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum culpa reiciendis quidem numquam cumque unde accusantium atque asperiores architecto exercitationem. Distinctio velit dolores tempora repellendus ex neque officia? Consequuntur, quo?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum culpa reiciendis quidem numquam cumque
+                    unde accusantium atque asperiores architecto exercitationem. Distinctio velit dolores tempora
+                    repellendus ex neque officia? Consequuntur, quo?</p>
             </div>
 
             <div class="testimonial-col">
@@ -171,11 +175,13 @@
                         <small>@teachingmensfashion</small>
                     </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum culpa reiciendis quidem numquam cumque unde accusantium atque asperiores architecto exercitationem. Distinctio velit dolores tempora repellendus ex neque officia? Consequuntur, quo?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum culpa reiciendis quidem numquam cumque
+                    unde accusantium atque asperiores architecto exercitationem. Distinctio velit dolores tempora
+                    repellendus ex neque officia? Consequuntur, quo?</p>
             </div>
         </div>
     </section>
-     
+
     <section id="footer">
         <img src="images/footer3.png" class="footer-img">
         <div class="title-text">
@@ -190,8 +196,8 @@
             </div>
             <div class="footer-right">
                 <h1>Get In Touch</h1>
-                <p> 
-                     FLAT F1 LMU Staff Quarters, Omu-Aran <i class="fa fa-map-marker"></i>
+                <p>
+                    FLAT F1 LMU Staff Quarters, Omu-Aran <i class="fa fa-map-marker"></i>
                 </p>
                 <p>
                     boluwatifegaius@gmail.com <i class="fa fa-paper-plane"></i>
@@ -209,6 +215,27 @@
             <p>Copyright & Copy; 2022 - Code with GaiusKay</p>
         </div>
     </section>
+
+    <script>
+
+        var manuBtn = document.getElementById('manuBtn')
+        var sideNav = document.getElementById('sideNav')
+        var menu = document.getElementById('menu')
+
+        sideNav.style.right = "-250px";
+        manuBtn.onclick = function () {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "images/menu.png";
+            }
+            else {
+                sideNav.style.right = "-250px";
+                menu.src = "images/menu.png";
+            }
+        }
+
+
+    </script>
 
 </body>
 
