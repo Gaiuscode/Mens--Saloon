@@ -25,19 +25,21 @@
             </div>
         </div>
     </section>
-    <div id="sideNav">
-        <nav>
+    <div class="sidebar active">
+        <div class="links">
             <ul>
-                <li><a href="#banner">HOME</a></li>
-                <li><a href="#feature">FEATURES</a></li>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#testimonial">TESTIMONIALS</a></li>
-                <li><a href="#footer">MEET US</a></li>
+                <li><a href="#banner"><i class="fa fa-home"></i>HOME</a></li>
+                <li><a href="#feature"><i class="fa fa-check"></i>FEATURES</a></li>
+                <li><a href="#services"><i class="fa fa-list"></i>SERVICES</a></li>
+                <li><a href="#testimonial"><i class="fa fa-comments"></i>TESTIMONIALS</a></li>
+                <li><a href="#footer"><i class="fa fa-phone"></i>MEET US</a></li>
             </ul>
-        </nav>
-    </div>
-    <div id="manuBtn">
-        <img src="images/menu.png" alt="">
+        </div>
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
     <section id="feature">
         <div class="title-text">
@@ -218,22 +220,9 @@
 
     <script>
 
-        var manuBtn = document.getElementById('manuBtn')
-        var sideNav = document.getElementById('sideNav')
-        var menu = document.getElementById('menu')
-
-        sideNav.style.right = "-250px";
-        manuBtn.onclick = function () {
-            if (sideNav.style.right == "-250px") {
-                sideNav.style.right = "0";
-                menu.src = "images/menu.png";
-            }
-            else {
-                sideNav.style.right = "-250px";
-                menu.src = "images/menu.png";
-            }
-        }
-
+        document.querySelector(".sidebar .toggle-btn").addEventListener("click",function(){
+            document.querySelector(".sidebar").classList.toggle("active");
+        });
 
     </script>
 
